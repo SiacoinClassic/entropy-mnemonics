@@ -1,7 +1,7 @@
 # entropy-mnemonics
 
 [![Build Status](https://travis-ci.org/NebulousLabs/entropy-mnemonics.svg?branch=master)](https://travis-ci.org/NebulousLabs/entropy-mnemonics)
-[![Documentation](https://img.shields.io/badge/docs-godoc-blue.svg)](https://godoc.org/github.com/NebulousLabs/entropy-mnemonics)
+[![Documentation](https://img.shields.io/badge/docs-godoc-blue.svg)](https://godoc.org/gitlab.com/NebulousLabs/entropy-mnemonics)
 
 mnemonics is a golang package that converts byte slices into human-friendly
 phrases. The primary purpose is to assist with the generation of
