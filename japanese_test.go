@@ -22,7 +22,7 @@ func TestJapanesesDictionary(t *testing.T) {
 
 	// Check that the dictionary has well formed elements, and no repeats.
 	japMap := make(map[string]struct{})
-	for _, word := range japaneseDictionary {
+	for _, word := range JapaneseDictionary {
 		// Check that the word is long enough.
 		if utf8.RuneCountInString(word) < JapaneseUniquePrefixLen {
 			t.Fatal("found a short word:", word)

@@ -46,7 +46,7 @@ const (
 )
 
 var (
-	japaneseDictionary = Dictionary{
+	JapaneseDictionary = Dictionary{
 		"あいこくしん",
 		"あいさつ",
 		"あいだ",

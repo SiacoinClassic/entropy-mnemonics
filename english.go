@@ -43,7 +43,7 @@ const (
 )
 
 var (
-	englishDictionary = Dictionary{
+	EnglishDictionary = Dictionary{
 		"abbey",
 		"abducts",
 		"ability",

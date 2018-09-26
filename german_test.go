@@ -21,7 +21,7 @@ func TestGermanDictionary(t *testing.T) {
 
 	// Check that the dictionary has well formed elements, and no repeats.
 	gerMap := make(map[string]struct{})
-	for _, word := range germanDictionary {
+	for _, word := range GermanDictionary {
 		// Check that the word is long enough.
 		if utf8.RuneCountInString(word) < GermanUniquePrefixLen {
 			t.Fatal("found a short word:", word)

@@ -21,7 +21,7 @@ func TestEnglishDictionary(t *testing.T) {
 
 	// Check that the dictionary has well formed elements, and no repeats.
 	engMap := make(map[string]struct{})
-	for _, word := range englishDictionary {
+	for _, word := range EnglishDictionary {
 		// Check that the word is long enough.
 		if utf8.RuneCountInString(word) < EnglishUniquePrefixLen {
 			t.Fatal("found a short word:", word)
