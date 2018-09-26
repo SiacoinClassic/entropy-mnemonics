@@ -115,13 +115,13 @@ func phraseToInt(p Phrase, did DictionaryID) (*big.Int, error) {
 	var prefixLen int
 	switch {
 	case did == English:
-		dict = englishDictionary
+		dict = EnglishDictionary
 		prefixLen = EnglishUniquePrefixLen
 	case did == German:
-		dict = germanDictionary
+		dict = GermanDictionary
 		prefixLen = GermanUniquePrefixLen
 	case did == Japanese:
-		dict = japaneseDictionary
+		dict = JapaneseDictionary
 		prefixLen = JapaneseUniquePrefixLen
 	default:
 		return nil, errUnknownDictionary
@@ -178,11 +178,11 @@ func intToPhrase(bi *big.Int, did DictionaryID) (p Phrase, err error) {
 	var dict Dictionary
 	switch {
 	case did == English:
-		dict = englishDictionary
+		dict = EnglishDictionary
 	case did == German:
-		dict = germanDictionary
+		dict = GermanDictionary
 	case did == Japanese:
-		dict = japaneseDictionary
+		dict = JapaneseDictionary
 	default:
 		return nil, errUnknownDictionary
 	}

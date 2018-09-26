@@ -45,7 +45,7 @@ const (
 )
 
 var (
-	germanDictionary = Dictionary{
+	GermanDictionary = Dictionary{
 		"Abakus",
 		"Abart",
 		"abbilden",
